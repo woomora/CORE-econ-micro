@@ -8,7 +8,7 @@
 ## **Short essay** :page_facing_up: 
 
 A short essay applying concepts, models, and economic intuition to a real-world situation. 
-For example: Do minimum wages increase unemployment? Are humans competitive by nature? Do gender inequalities are 'natural'?
+For example: Do minimum wages increase unemployment? Are humans competitive by nature? Do gender quotas work?
 
 The essay’s overreaching goal is that students show the acquired knowledge and tools to understand and provide alternatives to real-world problems.
 
