@@ -1,4 +1,4 @@
-# CORE Economics - Micro :chart_with_upwards_trend::chart_with_downwards_trend:
+# CORE Economics - Micro :game_die:
 
 Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
