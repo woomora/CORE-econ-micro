@@ -18,9 +18,5 @@ Here you can find three examples on different topics: 1) [Why GDP as a measure m
 
 The essay is **due to 06/01/2023**, with **maximum of two pages**.
 
-<! --- ## **Problem set** :pencil2:
+<! --- ## **Problem set** :pencil2: --->
 
-<! --- Some problems to prepare for the exam. Two more [here](https://github.com/woomora/CORE-econ-macro/blob/master/other/CORE_Econ_Macro_Problems.pdf).
-
-<! --- - Unit 6: 
-<! ---  - [EXERCISE 6.3](https://www.core-econ.org/the-economy/book/text/06.html#exercise-63-assumptions-of-the-model)
