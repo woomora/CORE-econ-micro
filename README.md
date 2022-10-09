@@ -10,6 +10,10 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
 :clipboard: You can find the slides here:
 
+- **Introduction**
+
+  - [Introductory session](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.html#1) ([pdf]())
+
 
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
