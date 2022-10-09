@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>CORE Econ Micro</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Guillermo Woo-Mora" />
+    <meta name="date" content="2022-11-10" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <meta name="description" content="An Introduction to xaringan for Presentations: The Basics"/>
+    <meta name="generator" content="xaringan and remark.js"/>
+    <meta name="github-repo" content="spcanelon/xaringan-basics-and-beyond"/>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <script src="libs/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# CORE Econ Micro
+]
+.subtitle[
+## Sciences pour un Monde Durable - Paris Sciences et Lettres
+]
+.author[
+### Guillermo Woo-Mora
+]
+.date[
+### 11/10/2022
+]
+
+---
+
+
+&lt;style&gt;
+
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+.center2[
+# Welcome!
+]
+
+---
+
+.center[
+# Welcome!
+]
+
+--
+
+.center[
+### Today is an introductory session
+]
+
+
+--
+
+  - Introduce yourself:
+    1. Name (how you like to be called)
+    2. Age
+    3. Where are you from
+    4. Something about yourself that your classmates do not know (and you are willing to share)
+
+--
+
+&lt;img src="https://media.giphy.com/media/QBGfW8HqzXzYDojCqo/giphy.gif" width="35%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center2[
+
+# What is economics?
+
+]
+
+---
+
+&lt;img src="imgs/economix.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="imgs/marx_meme.webp" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center2[
+
+# It depends
+
+]
+
+---
+
+.center[
+# (Philosophical note)
+]
+
+--
+
+  - Everyone has their political or economic ideals!
+
+--
+    - Even economist. 
+--
+  We are humans and social beings.
+
+--
+    - We can agree on a benchmark or minumum of acceptable ideas (i.e. as long as they respect human rights)
+
+--
+
+.center[
+### What is `\(\neq\)` What is ought to be
+*John Neville Keynes*
+]
+
+
+--
+
+.center[
+### La historia, como la lucha entre el bien y el mal en la que, por definición, los buenos somos nosotros
+*Mauricio Tenorio Trillo*
+]
+
+--
+  - Difficult to argue on *scientific neutrality*. 
+--
+  We should advance towards accepting both the rigorous evidence that we like and dislike.
+
+---
+
+.center[
+# Economics: The dismal science
+]
+
+--
+
+Misunderstandings and (really) bad communication:
+--
+
+&gt; *"Neoclassical economics has become an unquestioned belief system and treats anybody who challenges the creed of self-righting markets and rational consumers as dangerous heretics"* 
+
+--
+
+&gt; *"Complex mathematics is used to mystify economics, just as congregations in Luther’s time were deliberately left in the dark by services conducted in Latin."*
+    
+--
+
+&gt; **Responsible of 2008 Great Recession**.
+    
+--
+
+&lt;img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="20%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center[
+# Defending the dismal science 
+]
+
+--
+OK. Economist can be quite arrogant (sometimes we are nice).
+--
+ But...
+
+--
+
+
+.center[
+*"The economy did not die, and a Great Depression was avoided, in no small part due to the advances of economics over many decades"* (Ricardo Reis)
+]
+
+--
+
+.pull-left[
+
+*"The London Tube map is not realistic and makes absurd assumptions. [...] is useful precisely because it abstracts from unnecessary details to show you the way. This is what economic models are for, they help us to find our way through complex data in a complex world."* (Oriana Bandiera et al)
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="imgs/tube-map.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
+.center[
+# Defending the dismal science 
+]
+
+--
+
+&gt; *"Economics' recent empirical bent makes it more difficult to idolize markets because it makes it more difficult to ignore inconvenient facts."* (Dani Rodrik, Suresh Naidu  and Gabriel Zucman)
+
+--
+
+.pull-left[
+&lt;img src="imgs/nobel2019.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+.pull-right[
+&lt;img src="imgs/nobel2021.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.center[
+# (Nobel Prize 2022)
+]
+
+
+
+--
+
+.center[
+*Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel*
+]
+
+---
+
+
+.center[
+# Defending the dismal science 
+]
+
+
+&lt;img src="core-intro_files/figure-html/unnamed-chunk-9-1.png" width="35%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+.center[
+# Top Reasos to Study Economics
+]
+
+--
+
+- You can talk about money without every having to make any.
+
+- Mick Jagger and Arnold Schwarzenegger both studied economics and look how they turned out.
+
+- When you are in the unemployment line, at least you will know why you are there.
+
+--
+
+&lt;img src="https://i.redd.it/j3rggb2jvnt21.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center[
+# Top Reasos to Study Economics
+]
+
+--
+
+- Useful for understanding (parts) of the daily reality
+
+--
+
+- Useful for policymakers, international organizations and NGO's
+
+--
+
+- Private sectors employers appreciate training in economics
+
+--
+
+- **Lerning to be critical: Useful to learn theories and methods so you can test whatever argument**
+
+--
+
+&lt;img src="https://media.makeameme.org/created/economics-dpyo00.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center[
+# This class
+]
+
+--
+
+  - What we are going to do in this (and the following) class?
+  
+--
+
+  - Study concepts and models used to understand strategic and social interactions.
+  
+--
+
+  - Ideally: See how economics is useful to provide answers to real world situations.
+
+--
+
+  - **Spoiler**: We will only have a better understanding. Unfortunately, we would not be able to fully know what happen, is happening, or will happen. But that's because there is uncertainty and we are humans 😄
+
+--
+
+&lt;img src="imgs/meme1.jpeg" width="55%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+.center[
+# Teaching economics as if the last three decades had happened
+]
+
+--
+
+&gt; *The study of how people interact with each other and with their natural surroundings in producing their livelihoods, and how this changes over time*
+
+--
+
+&lt;img src="imgs/coreecon.jpeg" width="27.5%" style="display: block; margin: auto;" /&gt;
+
+.center[
+The CORE team, The Economy, 2017. https://www.core-econ.org.
+]
+
+---
+
+.center[
+# Extra (suggested) material
+]
+
+.pull-left[
+&lt;img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562348201l/51014619._SX0_SY0_.jpg" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="https://cdn2.penguin.com.au/covers/original/9781446468364.jpg" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-left[
+&lt;img src="https://m.media-amazon.com/images/I/41vuRmq3MzS.jpg" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="https://pictures.abebooks.com/isbn/9780810988392-fr.jpg" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+
+
+---
+.center[
+# Course structure
+]
+
+--
+
+- Weekly lectures with **active participation**.
+
+--
+
+- The student must **read in advance** each weeks *The Economy's* weekly unit.
+
+--
+ Extra suggested readings and articles to complement the topic.
+--
+
+- Wednesdays from 15:45-17:45.
+--
+  Some Fridays 10:45-12:45.
+  
+--
+
+- Three TD to do some practical excercises.
+
+--
+
+&lt;img src="imgs/math_econ.jpeg" width="30%" style="display: block; margin: auto;" /&gt;
+
+
+---
+.center[
+# Course structure
+]
+
+--
+
+.center[
+
+&lt;video width="620" height="460" controls&gt;
+&lt;source src="imgs/econ_class_sleeping.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+]
+
+.center[
+**Tight schedule**. Need to **read**, **participate**, and **work by your own**.
+]
+
+---
+.center[
+# Course structure
+]
+
+
+.center[
+**Tight schedule**. Need to **read**, **participate**, and **work by your own**
+]
+
+
+--
+
+.pull-left[
+- The capitalist revolution
+- Technology, population and growth
+- Scarcity, work, and choice
+- Social Interactions
+- Property and power: Mutual gains and conflic
+- The firm: Owners, managers, and employees
+- The firm and its customers
+- Supply and demand: Price-taking and competitive markets
+- Banks, money, and the credit market
+- Rent-seeking, price-setting, and market dynamics
+- Markets, efficiency, and public polic
+
+]
+
+--
+
+.pull-right[
+&lt;img src="imgs/syllabus qr.png" width="65%" style="display: block; margin: auto;" /&gt;
+]
+
+--
+
+
+Course website: https://github.com/woomora/CORE-econ-micro
+
+The schedule is tentative and subject to change. 
+**Please check the most recent version of the syllabus.**
+
+
+---
+
+.center[
+# Grading
+]
+
+--
+
+- **Exams (50%)**
+
+--
+
+  - A midterm on **06/12 (20%)**
+--
+
+  - A final exam on **17/01 (30%)**
+  
+--
+
+- **Quizzes (20%)**
+
+--
+  - Surprise (short) quizzes. I will evaluate the content of the weekly lectures.
+
+--
+
+- **Short essay (30%)**
+
+--
+
+  - A short essay applying concepts, models, and economic intuition to a real-world situation. 
+--
+
+  - The essay is **due to Wednesday 11/01/2023**, with maximum of two pages.
+--
+
+  - The essay’s goal is that students show the acquired knowledge and tools to understand and provide alternatives to real-world problems.
+--
+
+  - Think of the essay as an op-ed *(column, éditorial)* where the student translates what she/he learned in the classroom to a broad audience.
+
+
+---
+# Course Policies
+
+--
+
+- Be nice to each other 😊
+--
+
+- No harassment to any person or of any kind will be tolerated.
+--
+
+- Computers allowed. No cellphones.
+--
+
+- Attendance is mandatory, and it may influence the professor’s benevolence 😉
+--
+
+- You have enough time for your assignments, so late assignments are penalized. One point by each hour after deadline. 
+--
+
+- Academic integrity and honesty: cite other peoples’ ideas and work.
+--
+
+.center[
+
+&lt;video width="580" height="340" controls&gt;
+&lt;source src="imgs/badbunny.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+]
+
+
+
+
+
+---
+
+.center2[
+# Any questions?
+]
+
+---
+
+.center[
+# Next class
+]
+
+--
+
+- Understanding the increases in average living standards in many countries.
+
+--
+
+- **Capitalist revolution**: advances in technology and specialization, private property, markets and firms.
+
+--
+
+- **Threats to our natural environment** and **unprecedented global economic inequalities**.
+
+--
+
+&lt;img src="https://media.giphy.com/media/hmxZRW8mhs4ak/giphy.gif" width="35%" style="display: block; margin: auto;" /&gt;
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
