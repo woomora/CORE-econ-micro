@@ -12,10 +12,11 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
 - **Introduction**
 
-  - [Introductory session](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.html#1) ([pdf]())
+  - [Introductory session](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.html#1)
  
-  - [The Capitalist Revolution](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit1.html#1) ([pdf]())
+  - [The Capitalist Revolution](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit1.html#1)
   
-
+  - [Technology, population and growth](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit2.html#1)
+  
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
