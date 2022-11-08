@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Unit 3: Scarcity, Work, and Choice</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Guillermo Woo-Mora" />
+    <meta name="date" content="2022-08-11" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <meta name="description" content="An Introduction to xaringan for Presentations: The Basics"/>
+    <meta name="generator" content="xaringan and remark.js"/>
+    <meta name="github-repo" content="spcanelon/xaringan-basics-and-beyond"/>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <script src="libs/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Unit 3: Scarcity, Work, and Choice
+]
+.author[
+### Guillermo Woo-Mora
+]
+.date[
+### 08/11/2022
+]
+
+---
+
+
+&lt;style&gt;
+
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+
+.center2[
+# Get a life
+]
+
+---
+
+&lt;img src="imgs/annual-hours-of-work-and-income-18702016.svg" width="75%" style="display: block; margin: auto;" /&gt;
+
+--
+
+For most countries, living standards have greatly increased since 1870.
+--
+ But there are disparities in free time and income across countries.
+
+---
+
+&lt;img src="imgs/annual-hours-of-free-time-per-worker-and-income.svg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+.center[
+# Labour
+]
+
+--
+
+.pull-left[
+
+- Work (Unit 1)
+
+- Input in the production of goods and services (Unit 2)
+
+- New technologies raise the productivity of labour (Unit 2)
+  - Does that affect living standards?
+  - Does that affect the free time and working hours chosen by individuals?
+
+- **Model individual choice** to explain the differences in work hours across countries and over time
+
+]
+
+.pull-right[
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/We_Can_Do_It%21_NARA_535413_-_Restoration_2.jpg/250px-We_Can_Do_It%21_NARA_535413_-_Restoration_2.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.center2[
+# Scarcity and choice: Key concepts
+]
+
+---
+
+.center[
+# Example: Students
+]
+
+--
+
+As a student, you make choice every day:
+--
+ how many hours to spend studying.
+
+--
+
+There are many factors influencing your decision:
+
+- how much you enjoy studying/working
+- how difficult you find it
+- how much your friends study
+
+--
+
+Positive relation between grades and number of hours studied, **ceteris paribus**
+
+|     | **High study time (42 students)** | **Low study time (42 students)** |
+| --- | --- | --- |
+| Average Grades | 3.43 | 3.36 |
+
+---
+
+.center[
+### Example: Students
+]
+
+
+As a student, you make choice every day: how many hours to spend studying.
+
+
+There are many factors influencing your decision:
+
+- how much you enjoy studying/working
+- how difficult you find it
+- how much your friends study
+
+
+
+Positive relation between grades and number of hours studied: **context dependent**
+
+|     | **High study time (42 students)** | **Low study time (42 students)** |
+| --- | --- | --- |
+| Good environment | 3.63 | 3.43 |
+| Poor environment | 3.36 | 3.17 |
+
+--
+
+Alexei **production function**: `\(y = f(h)\)`
+
+Translates the number of hours per day spendt studying (input of labor) into a grade (output).
+
+| |	|	| 	| |	|		| 	| 	|  |	 |	 |  |	 |  |  |  |
+| --- | ---	| ---	| ---	| --- |	--- |	---	| ---	| ---	| --- |	--- |	--- | --- |	--- | --- | --- | --- |
+| Study hours | 0	| 1	| 2	| 3 |	4 |	5	| 6	| 7	| 8 |	9 |	10 | 11 |	12 | 13 | 14 | `\(\geq\)` 15 |
+| Grade | 0	| 20	| 33	| 42 | 50 |	57	| 63	| 69 | 74 |	78 | 81 | 84 |	86 | 88 | 89 | 90 |
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+--
+
+&lt;img src="imgs/figure3-5a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The curve is Alexei’s production function. It shows how an input of study hours produces an output, the final grade.
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+If Alexei studies for four hours his grade will be 50, and if he studies for 10 hours he will achieve a grade of 81.
+
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5c.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At 15 hours of study per day Alexei achieves his maximum possible grade, 90. After that, further hours will make no difference to his result: the curve is flat.
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Increasing study time from 4 to 5 hours raises Alexei’s grade from 50 to 57. Therefore, at 4 hours of study, the marginal product of an additional hour is 7.
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5e.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Increasing study time from 10 to 11 hours raises Alexei’s grade from 81 to 84. At 10 hours of study, the marginal product of an additional hour is 3.
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5e.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+As we move along the curve, the slope of the curve falls, so the marginal product of an extra hour falls. The marginal product is diminishing.
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5f.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+When Alexei studies for four hours per day his average product is 50/4 = 12.5 percentage points, which is the slope of the ray from that point to the origin.
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5g.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At 4 hours per day the average product is 12.5. At 10 hours per day it is lower (81/10 = 8.1). The average product falls as we move along the curve. At each point the marginal product (the slope of the curve) is lower than the average product (the slope of the ray).
+
+---
+
+.center[
+Alexei **production function**
+]
+
+`$$y = f(h)$$`
+
+&lt;img src="imgs/figure3-5h.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The marginal product at four hours of study is approximately 7, which is the increase in the grade from one more hour of study. More precisely, the marginal product is the slope of the tangent at that point, which is slightly higher than 7.
+
+---
+
+.center[
+### What can production functions tell us?
+]
+
+--
+
+**1. Average product**: Average output per unit of input
+
+$$ \frac{y}{h} = \frac{f(h)}{h} $$
+
+--
+
+**2. Marginal product**: Change in output per unit change in input. (*Evaluated at a given point, holding other inputs constant*
+--
+, or **slope of the tangent to the curve at a point**)
+
+.pull-left[
+
+$$ \frac{\Delta y}{\Delta h} = \frac{f(h + \Delta h) - f(h)}{\Delta h} $$
+
+]
+
+--
+
+.pull-right[
+
+$$ \Delta h \rightarrow 0 \quad \Rightarrow  \quad  \frac{\Delta y}{\Delta h} = \frac{d y}{d h} = f'(h) $$
+
+]
+
+--
+
+&lt;img src="core-unit3_files/figure-html/unnamed-chunk-13-1.png" width="45%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center[
+**Examples of production functions**
+]
+
+$$ y = Ah^\alpha $$
+
+--
+
+.pull-left[
+
+- `\(A &gt; 0\)`: locates the function
+- `\(0 &lt; \alpha &lt; 1\)`: curvature of the function
+- `\(f(h = 0) = 0\)` and `\(f(h &gt; 0) &gt; 0\)`
+
+]
+
+--
+
+
+.pull-right[
+**Average product**: `\(\frac{y}{h} = \frac{Ah^\alpha}{h} = Ah^{\alpha - 1} &gt; 0\)`
+]
+
+--
+
+.pull-left[
+
+**Marginal product**: `\(\frac{dy}{dh} = A\alpha h^{\alpha - 1} &gt; 0\)`
+
+]
+
+--
+
+.pull-right[
+
+**Diminishing Marginal product**: `\(\frac{d}{dh} ( \frac{dy}{dh} ) = A\alpha (\alpha - 1) h^{\alpha - 2} &lt; 0\)`
+
+]
+
+--
+
+.center[
+&lt;img src="core-unit3_files/figure-html/unnamed-chunk-14-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+
+---
+
+.center[
+## Preferences
+]
+
+--
+
+Choices depend on **preferences**:
+--
+
+- a description of the benefit or cost we associate with each possible outcome
+--
+
+- things we care about
+
+--
+
+Back to Alexei example: cares about grades but also about his free time. 
+
+
+|     |	A |	B | F	| G | H	|	D	| 
+| --- | ---	| ---	| ---	| --- |	--- |	---	| 
+| Hours of free time | 15	| 16	| 17	| 18 | 19 |	20	| 
+| Final grade | 84	| 75	| 67	| 60 | 54 |	50	| 
+
+--
+
+**Trade-off**: Choosing between alternatives, leaving at least one.
+
+--
+
+How to represent preferences? 
+--
+ Mapping them.
+--
+ Graphically and mathematically.
+ 
+--
+
+**Utility function**: `$$U(t,y)$$`
+ 
+--
+
+**Indifference curves**: show 
+all combinations of goods that give 
+the same **utility** (satisfaction) 
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+--
+
+Combinations A and B both deliver a grade of 84, but Alexei will prefer A because it has more free time.
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6b.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+
+At combinations C and D Alexei has 20 hours of free time per day, but he prefers D because it gives him a higher grade.
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6c.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+We don’t know whether Alexei prefers A or E. So we ask him: he says he is **indifferent**. Meaning he would feel equally satisfied with either outcome. He has the same **utility**.
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Alexei says that F is another combination that would give him the same **utility** as A and E.
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6e.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+By asking more questions, we discover that Alexei is indifferent between all of the combinations between A and D.
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6f.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+These points are joined together to form an **indifference curve**.
+
+---
+
+.center[
+**Indiference Curves**
+]
+
+`$$U(t,y) = c$$`
+
+&lt;img src="imgs/f3-6g.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Indifference curves can be drawn through any point in the diagram, to show other points giving the **same utility**. We can construct other curves starting from B or C in the same way as before, by finding out which combinations give the **same amount of utility**.
+
+---
+
+.center[
+## Indiference Curves
+]
+
+- **Indifference curves slope downward due to trade-offs**: If you are indifferent between two combinations, the combination that has more of one good must have less of the other good.
+
+--
+
+- **Higher indifference curves correspond to higher utility levels**: As we move up and to the right in the diagram, further away from the origin, we move to combinations with more of both goods.
+
+--
+
+- **Indifference curves are usually smooth**: Small changes in the amounts of goods don’t cause big jumps in utility.
+
+--
+
+- **As you move to the right along an indifference curve, it becomes flatter.**
+
+--
+
+- **Indifference curves do not cross** 
+
+---
+
+.pull-left[
+&lt;img src="imgs/exc3.3.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+.pull-right[
+
+&lt;img src="imgs/f3-exc3.3.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+1. Higher utilit
+2. Draw graph
+3. Same utility
+4. Same utility
+5. **Same utility (!!!)** 
+6. `\(\rightarrow\)` **Answer 5 contradicts answer 1**
+
+]
+
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+--
+
+&lt;img src="imgs/f3-7a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The diagram shows three indifference curves for Alexei. The curve furthest to the left offers the lowest satisfaction.
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+&lt;img src="imgs/f3-7b.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At A, he has 15 hours of free time and his grade is 84.
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+&lt;img src="imgs/f3-7c.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+He would be willing to move from A to E, giving up 9 percentage points for an extra hour of free time. His marginal rate of substitution is 9. The indifference curve is steep at A.
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+&lt;img src="imgs/f3-7d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At H he is only willing to give up 4 points for an extra hour of free time. His MRS is 4. As we move down the indifference curve, the MRS diminishes, because points become scarce relative to free time. The indifference curve becomes flatter.
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+&lt;img src="imgs/f3-7e.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+**All combinations with 15 hours of free time**:
+On the lowest curve the grade is low, and the MRS is small. Alexei would be willing to give up only a few points for an hour of free time. As we move up the vertical line the indifference curves are steeper: the MRS increases.
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+&lt;img src="imgs/f3-7f.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+**All combinations with a grade of 54**:
+On the curve furthest to the left, free time is scarce, and the MRS is high. As we move to the right along the red line he is less willing to give up points for free time. The MRS decreases–the indifference curves get flatter.
+
+
+---
+
+.center[
+### Marginal Rate of Substitution (MRS)
+]
+
+.center[
+Slope of the indifference curve: represents the tradeoffs that an individual faces.
+]
+
+`$$U(t,y) = c$$`
+--
+
+Suppose both `\(t\)` and `\(y\)` change by small amounts `\(\Delta t\)` and `\(\Delta y\)`. 
+--
+ The small increments formula for functions of two variables gives an approximation to the change in utility:
+
+$$ \Delta U \approx \frac{\delta U}{\delta t} \Delta t + \frac{\delta U}{\delta y} \Delta y$$
+--
+
+If the changes `\(\Delta t\)` and `\(\Delta y\)` are such that 1) `\(\Delta  \rightarrow 0\)` and Alexei stays in the same indifference curve,
+--
+ then his utility does not change:
+ 
+$$ \frac{\delta U}{\delta t} \Delta t + \frac{\delta U}{\delta y} \Delta y \approx 0 \iff  \frac{d y}{d t} = - \frac{\delta U}{\delta t} / \frac{\delta U}{\delta y}  $$
+--
+
+Then, **marginal rate of substitution (MRS)** is the absolute value of the slope:
+
+$$ MRS = | \frac{\delta U}{\delta t} / \frac{\delta U}{\delta y} |  $$
+
+---
+
+.center[
+**Examples of utility functions**
+]
+
+--
+
+.center[
+**Cobb-Douglas function**
+]
+
+$$ U(t,y) = t^\alpha \cdot y^\beta $$
+
+--
+
+$$ \alpha, \beta &gt; 0 $$
+--
+
+.pull-left[
+**Marginal utility of free time**: 
+
+$$ \frac{\delta U}{\delta t} = \alpha cdot  t^{\alpha -1}  \cdot y^\beta  = \alpha \cdot \frac{U}{t}$$
+
+]
+
+--
+
+.pull-right[
+**Marginal utility of the exam grade**: 
+
+$$ \frac{\delta U}{\delta y} = \beta cdot  t^\alpha \cdot y^{\beta -1}   = \beta \cdot \frac{U}{y}$$
+
+]
+
+--
+
+.center[
+**Marginal rate of substitition**:
+
+$$ MRS = | \frac{\delta U}{\delta t} / \frac{\delta U}{\delta y} | = \alpha \cdot \frac{U}{t} / \beta \cdot \frac{U}{y} = \frac{\alpha y}{\beta t} $$
+
+]
+
+
+--
+
+As `\(t \uparrow\)` and `\(y \downarrow\)` 
+--
+
+- `\(\Rightarrow\)` `\(y/t \downarrow\)`
+
+--
+
+- `\(\Rightarrow\)` `\(MRS \downarrow\)`
+
+---
+
+.center[
+# Opportunity costs
+]
+
+--
+
+Choices are limited by **constraints** and involve **tradeoffs**
+--
+ (Studying example: higher grades vs. more free time).
+
+--
+
+The **opportunity cost** of an action is the net benefit of the next best alternative action.
+
+--
+
+Relevant whenever we study individuals choosing between alternative and mutually exclusive courses of action.
+
+--
+
+Example: 
+
+
+&gt; Imagine that an accountant and an economist have been asked to report the cost of going to a concert, **A**, in a theatre, which has a $25 admission cost. In a nearby park there is concert **B**, which is free but happens at the same time
+
+--
+
+.pull-left[
+**Accountant**
+The cost of concert A is your ‘out-of-pocket’ cost: you paid 25 for a ticket, so the cost is 25.
+]
+
+--
+
+.pull-right[
+**Economist**
+But what do you have to give up to go to concert A? You give up 25, plus the enjoyment of the free concert in the park. So the cost of concert A for you is the out-of-pocket cost plus the opportunity cost.
+
+]
+
+
+$$ \textbf{Accountants} \neq  \textbf{Economist} $$
+
+---
+
+.center[
+# Opportunity costs
+]
+
+Suppose that the most you would have been willing to pay to attend the free concert in the park (if it wasn’t free) was 15.
+
+--
+
+**Economic costs**: The out-of-pocket cost of an action
+
+$$ \textbf{economic costs} = 25 + 15 = 40 $$
+
+--
+
+**Economic rent**: A payment or other benefit received above and beyond what the individual would have received in his or her next best alternative (or *reservation option*)
+
+--
+
+|   | **High value on A**  | **Low value on A**  |
+| --- | --- | --- |
+| Out-of-pocket cost A | 25 | 25 |
+| Opportunity cost of leaving B | 15 | 15 |
+| **Economic cost** | 40 | 40 |
+
+
+---
+
+.center[
+# Opportunity costs
+]
+
+Suppose that the most you would have been willing to pay to attend the free concert in the park (if it wasn’t free) was 15.
+
+**Economic costs**: The out-of-pocket cost of an action
+
+$$ \textbf{economic costs} = 25 + 15 = 40 $$
+
+**Economic rent**: A payment or other benefit received above and beyond what the individual would have received in his or her next best alternative (or *reservation option*)
+
+|   | **High value on A**  | **Low value on A**  |
+| --- | --- | --- |
+| Out-of-pocket cost A | 25 | 25 |
+| Opportunity cost of leaving B | 15 | 15 |
+| **Economic cost** | 40 | 40 |
+| Enjoyment of A | 50 | 35 |
+| **Economic rent** | 10 | -5 |
+| Decision | **A** | **B** |
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
