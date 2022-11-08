@@ -18,5 +18,10 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
   
   - [Technology, population and growth](https://woomora.github.io/CORE-econ-micro/Unit-2/core-unit2.html#1)
   
+- **Interactions between economic actors**
+
+  - [Scarcity, work, and choice](https://woomora.github.io/CORE-econ-micro/Unit-3/core-unit3.html#1)  
+  
+  
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
