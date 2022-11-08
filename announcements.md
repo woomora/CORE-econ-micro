@@ -2,10 +2,12 @@
 
 ## **Exams** :books:
 
-- Midterm: 02/11
+- Midterm: 02/12
 - Final exam: 17/01
 
 ## **Short essay** :page_facing_up: 
+
+**Teams of two**
 
 A short essay applying concepts, models, and economic intuition to a real-world situation. 
 For example: Do minimum wages increase unemployment? Are humans competitive by nature? Do gender quotas work?
