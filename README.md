@@ -22,6 +22,8 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
   - [Scarcity, work, and choice](https://woomora.github.io/CORE-econ-micro/Unit-3/core-unit3.html#1)  
   
+  - [Social interactions](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.html#1)  
+  
   
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
