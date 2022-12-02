@@ -24,6 +24,7 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
   
   - [Social interactions](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.html#1)  
   
+  - [Property and Power: Mutual gains and conflict](https://woomora.github.io/CORE-econ-micro/Unit-5/core-unit5.html#1)  
   
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
