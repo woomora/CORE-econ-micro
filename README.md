@@ -26,5 +26,11 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
   
   - [Property and Power: Mutual gains and conflict](https://woomora.github.io/CORE-econ-micro/Unit-5/core-unit5.html#1)  
   
+- **Firms and markets**
+
+  - [The Firm: Owners, managers, and employees](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.html#1)  
+
+
+  
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
