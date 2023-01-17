@@ -31,8 +31,8 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
   - [The Firm: Owners, managers, and employees](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.html#1)  
   
   - [The Firm and its costumers](https://woomora.github.io/CORE-econ-micro/Unit-7/core-unit7.html#1)  
-
-
   
+  - [Supply and demand: Price-taking and competitive markets](https://woomora.github.io/CORE-econ-micro/Unit-8/core-unit8.html#1)  
+
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
