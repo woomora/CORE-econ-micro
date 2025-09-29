@@ -6,6 +6,8 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
 :paperclip: You can find the syllabus [here](https://www.dropbox.com/scl/fi/f2kcmkimvc5b4gstc0nb8/PSL-2025-CORE-Econ-Micro.pdf?rlkey=m9mpy6wfm0a2hds9g8hvnpkss&dl=0).
 
+:calendar: [Calendar](https://calendar.google.com/calendar/u/0/embed?src=c298fa4658bd9f1d5bc680e5f1fac0607e6d82f7d931814aec904b8a3dfc1fe8@group.calendar.google.com&ctz=Europe/Paris).
+
 :loudspeaker: You cand find announcements [here](https://github.com/woomora/CORE-econ-micro/blob/master/announcements.md).
 
 :clipboard: You can find the slides here:
