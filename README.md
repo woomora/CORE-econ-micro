@@ -16,4 +16,7 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
   - [Introductory session](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.html#1)
 
+  - [Unit 1: Prosperity, inequality, and planetary limits](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit1.html)
+
+
 You can reach me at guillermo.woo-mora [at] psemail.eu.
