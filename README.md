@@ -21,6 +21,9 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
   - [Unit 2: Technology and incentives](https://woomora.github.io/CORE-econ-micro/Unit-2/core-unit2.html)
 
   - [Unit 3: Doing the best you can: Scarcity, wellbeing, and working hours](https://woomora.github.io/CORE-econ-micro/Unit-3/core-unit3.html)
+ 
+  - [Unit 4: Strategic interactions and social dilemmas](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.html)
+
 
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
