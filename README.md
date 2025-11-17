@@ -14,15 +14,15 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
 - **Introduction**
 
-  - [Introductory session](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.html#1)
+  - [Introductory session](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.html#1) [[pdf](https://woomora.github.io/CORE-econ-micro/Intro/core-intro.pdf)]
 
-  - [Unit 1: Prosperity, inequality, and planetary limits](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit1.html)
+  - [Unit 1: Prosperity, inequality, and planetary limits](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit1.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-1/core-unit1.pdf)]
  
-  - [Unit 2: Technology and incentives](https://woomora.github.io/CORE-econ-micro/Unit-2/core-unit2.html)
+  - [Unit 2: Technology and incentives](https://woomora.github.io/CORE-econ-micro/Unit-2/core-unit2.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-2/core-unit2.pdf)]
 
-  - [Unit 3: Doing the best you can: Scarcity, wellbeing, and working hours](https://woomora.github.io/CORE-econ-micro/Unit-3/core-unit3.html)
+  - [Unit 3: Doing the best you can: Scarcity, wellbeing, and working hours](https://woomora.github.io/CORE-econ-micro/Unit-3/core-unit3.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-3/core-unit3.pdf)]
  
-  - [Unit 4: Strategic interactions and social dilemmas](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.html)
+  - [Unit 4: Strategic interactions and social dilemmas](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.pdf)]
 
 
 
