@@ -25,6 +25,8 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
   - [Unit 4: Strategic interactions and social dilemmas](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-4/core-unit4.pdf)]
 
   - [Unit 5: The rules of the game: Who gets what and why](https://woomora.github.io/CORE-econ-micro/Unit-5/core-unit5.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-5/core-unit5.pdf)]
+ 
+  - [Unit 6: The firm and its employees](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.pdf)]
 
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
