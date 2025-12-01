@@ -28,5 +28,7 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
  
   - [Unit 6: The firm and its employees](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.pdf)]
 
+  - [Unit 7: The firm and its customers](https://woomora.github.io/CORE-econ-micro/Unit-7/core-unit7.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-6/core-unit6.pdf)]
+
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
