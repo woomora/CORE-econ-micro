@@ -1593,7 +1593,6 @@ Dominant strategies? NE?
 .center[
 ## Excercise 
 ]
---
 
 .pull-left[
 **Total cost function:** $C(Q) = 50 + \frac{1}{2} Q^2$
@@ -1603,237 +1602,18 @@ Dominant strategies? NE?
 **Demand:** $Q(P) = 120 - P$
 ]
 
---
-
-**G**: Graphical solution
-
-**M**: Mathematical solution
-
---
+**G**: Graphical solution. **M**: Mathematical solution.
 
 a. What is the fixed cost? What is the variable cost? What is the marginal cost? What is the **average cost**? **G**, **M**
 
---
-
 b. Graph the demand curve. What is the feasible set for the firm's profit maximization? **G**
-
---
 
 c. Graph the AC and MC. At what quantity is AC at its minimum? Where AC and MC are equal? What would be the shape of the firms isoprofit curves? **G**
 
---
-
 d. What is the condition to obtain the quantity and price equilibrium? Obtain the equilibrium quantity. Obtain the price quantity. **G**, **M**
-
---
 
 e. How we could find the equilibrium graphically? **G**
 
---
+f. What is the price elasticity at the equilibrium? **M**
 
-e. What is the price elasticity at the equilibrium? **M**
-
-
----
-
-We are gonna use R and `tidyverse` to solve graphically the exercise. 
---
- To learn more: https://www.tidyverse.org/learn/.
- 
---
-
-```{r echo = T}
-# Load tidyverse and tidyr packages
-# if it is your first time in using them first write: install.packages(tidyverse) and install.packages(tidyr)
-library(tidyverse)
-library(tidyr)
-
-# We set a theme for the graphs
-theme_set(theme_classic())
-
-data <- 
-  tibble(
-    q = seq(1,120)
-  )
-
-data
-
-```
-
-
----
-
-Given we've solved mathematically the model, we are going to use the ecuations:
-
---
-
-```{r echo = T}
-data <-  
-  data %>% 
-  mutate(
-    # **average cost** function
-    ac = 50/q + (.5*q),
-    # Marginal cost function
-    mc = q,
-    # (Inverse) Demand function
-    p = 120 - q
-  )
-
-data
-```
-
----
-
-Let's plot the demand curve:
-
---
-
-```{r echo = T, out.width="65%"}
-data %>% pivot_longer(!q) %>% 
-  # We only wanna see the demand curve
-  filter(name == "p") %>% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve")
-```
-
----
-
-Let's plot the **average cost** curve:
-
---
-
-```{r echo = T, out.width="65%"}
-data %>% pivot_longer(!q) %>% 
-  # We only wanna see the AC curve
-  filter(name == "ac") %>% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve")
-```
-
----
-
-Let's plot the **average cost** curve more closely:
-
-```{r echo = T, out.width="65%"}
-data %>% pivot_longer(!q) %>% 
-  # We only wanna see the AC curve
-  filter(name == "ac") %>% 
-  # We only focus in Q values around AC shifts its slope
-  filter(q %in% seq(5,20)) %>% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") 
-```
-
----
-
-Let's plot the **average cost** and marginal cost curve:
-
---
-
-```{r echo = T, out.width="65%"}
-data %>% pivot_longer(!q) %>% 
-  # We only wanna see the AC and MC curve
-  filter(name != "p") %>% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") 
-```
-
----
-
-Let's plot the **average cost** and marginal cost curve more closely:
-
-
-```{r echo = T, out.width="65%"}
-data %>% pivot_longer(!q) %>% 
-  # We only wanna see the AC and MC curve
-  filter(name != "p") %>% 
-    # We only focus in Q values around AC shifts its slope
-  filter(q %in% seq(5,20)) %>% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + coord_cartesian(ylim = c(8,12)) +
-  geom_vline(xintercept = 10, linetype = "dashed") + geom_hline(yintercept = 10, linetype = "dashed") 
-```
-
----
-
-Let's compute the revenue and marginal revenue:
-
-```{r echo = T}
-data <-  
-  data %>% 
-  mutate(
-    # Revenue or profit
-    revenue = p * q,
-    # Marginal revenue Δ R / Δ Q
-    mr = (revenue - dplyr::lag(revenue))/(1)
-  ) 
-
-data
-```
-
----
-
-Let's plot everything together (but the total revenue)
-
-```{r echo = T, out.width="65%", warning=FALSE}
-data %>% select(-revenue) %>% pivot_longer(!q) %>% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + coord_cartesian(ylim = c(0,120))
-```
-
----
-
-Let's plot everything together (but the total revenue)
-
-```{r echo = F, out.width="100%", warning=FALSE}
-data %>% select(-revenue) %>% pivot_longer(!q) %>% 
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + 
-  coord_cartesian(ylim = c(0,120)) + 
-  geom_point(aes(x = 40, y = 40), color = "black", size = 2) + 
-  annotate("text", label = "MR = MC", x = 47.5, y = 40, size = 3)
-```
-
----
-
-Let's plot everything together (but the total revenue)
-
-```{r echo = F, out.width="100%", warning=FALSE}
-data %>% select(-revenue) %>% pivot_longer(!q) %>% 
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + 
-  coord_cartesian(ylim = c(0,120)) + 
-  geom_point(aes(x = 40, y = 40), color = "black", size = 2) + 
-  annotate("text", label = "MR = MC", x = 47.5, y = 40, size = 3) +
-  geom_vline(xintercept = 40, linetype = "dashed")
-```
-
----
-
-Let's plot everything together (but the total revenue)
-
-```{r echo = F, out.width="100%", warning=FALSE}
-data %>% select(-revenue) %>% pivot_longer(!q) %>% 
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + 
-  coord_cartesian(ylim = c(0,120)) + 
-  geom_point(aes(x = 40, y = 40), color = "black", size = 2) + 
-  annotate("text", label = "MR = MC", x = 47.5, y = 40, size = 3) +
-  geom_vline(xintercept = 40, linetype = "dashed") +
-  geom_point(aes(x = 40, y = 80), color = "black", size = 2) + 
-  annotate("text", label = "P(Q*) = 80", x = 47.5, y = 84, size = 3) 
-```
-
----
-
-Let's plot everything together (but the total revenue)
-
-```{r echo = F, out.width="100%", warning=FALSE}
-data %>% select(-revenue) %>% pivot_longer(!q) %>% 
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + 
-  coord_cartesian(ylim = c(0,120)) + 
-  geom_point(aes(x = 40, y = 40), color = "black", size = 2) + 
-  annotate("text", label = "MR = MC", x = 47.5, y = 40, size = 3) +
-  geom_vline(xintercept = 40, linetype = "dashed") +
-  geom_point(aes(x = 40, y = 80), color = "black", size = 2) + 
-  annotate("text", label = "P(Q*) = 80", x = 47.5, y = 84, size = 3) +
-  geom_hline(yintercept = 80, linetype = "dashed") 
-```
 

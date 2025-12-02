@@ -1444,7 +1444,6 @@ Dominant strategies? NE?
 .center[
 ## Excercise 
 ]
---
 
 .pull-left[
 **Total cost function:** `\(C(Q) = 50 + \frac{1}{2} Q^2\)`
@@ -1454,269 +1453,20 @@ Dominant strategies? NE?
 **Demand:** `\(Q(P) = 120 - P\)`
 ]
 
---
-
-**G**: Graphical solution
-
-**M**: Mathematical solution
-
---
+**G**: Graphical solution. **M**: Mathematical solution.
 
 a. What is the fixed cost? What is the variable cost? What is the marginal cost? What is the **average cost**? **G**, **M**
 
---
-
 b. Graph the demand curve. What is the feasible set for the firm's profit maximization? **G**
-
---
 
 c. Graph the AC and MC. At what quantity is AC at its minimum? Where AC and MC are equal? What would be the shape of the firms isoprofit curves? **G**
 
---
-
 d. What is the condition to obtain the quantity and price equilibrium? Obtain the equilibrium quantity. Obtain the price quantity. **G**, **M**
-
---
 
 e. How we could find the equilibrium graphically? **G**
 
---
+f. What is the price elasticity at the equilibrium? **M**
 
-e. What is the price elasticity at the equilibrium? **M**
-
-
----
-
-We are gonna use R and `tidyverse` to solve graphically the exercise. 
---
- To learn more: https://www.tidyverse.org/learn/.
- 
---
-
-
-``` r
-# Load tidyverse and tidyr packages
-# if it is your first time in using them first write: install.packages(tidyverse) and install.packages(tidyr)
-library(tidyverse)
-library(tidyr)
-
-# We set a theme for the graphs
-theme_set(theme_classic())
-
-data &lt;- 
-  tibble(
-    q = seq(1,120)
-  )
-
-data
-## # A tibble: 120 × 1
-##        q
-##    &lt;int&gt;
-##  1     1
-##  2     2
-##  3     3
-##  4     4
-##  5     5
-##  6     6
-##  7     7
-##  8     8
-##  9     9
-## 10    10
-## # ℹ 110 more rows
-```
-
-
----
-
-Given we've solved mathematically the model, we are going to use the ecuations:
-
---
-
-
-``` r
-data &lt;-  
-  data %&gt;% 
-  mutate(
-    # **average cost** function
-    ac = 50/q + (.5*q),
-    # Marginal cost function
-    mc = q,
-    # (Inverse) Demand function
-    p = 120 - q
-  )
-
-data
-## # A tibble: 120 × 4
-##        q    ac    mc     p
-##    &lt;int&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt;
-##  1     1  50.5     1   119
-##  2     2  26       2   118
-##  3     3  18.2     3   117
-##  4     4  14.5     4   116
-##  5     5  12.5     5   115
-##  6     6  11.3     6   114
-##  7     7  10.6     7   113
-##  8     8  10.2     8   112
-##  9     9  10.1     9   111
-## 10    10  10      10   110
-## # ℹ 110 more rows
-```
-
----
-
-Let's plot the demand curve:
-
---
-
-
-``` r
-data %&gt;% pivot_longer(!q) %&gt;% 
-  # We only wanna see the demand curve
-  filter(name == "p") %&gt;% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve")
-```
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-77-1.png" width="65%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot the **average cost** curve:
-
---
-
-
-``` r
-data %&gt;% pivot_longer(!q) %&gt;% 
-  # We only wanna see the AC curve
-  filter(name == "ac") %&gt;% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve")
-```
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-78-1.png" width="65%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot the **average cost** curve more closely:
-
-
-``` r
-data %&gt;% pivot_longer(!q) %&gt;% 
-  # We only wanna see the AC curve
-  filter(name == "ac") %&gt;% 
-  # We only focus in Q values around AC shifts its slope
-  filter(q %in% seq(5,20)) %&gt;% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") 
-```
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-79-1.png" width="65%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot the **average cost** and marginal cost curve:
-
---
-
-
-``` r
-data %&gt;% pivot_longer(!q) %&gt;% 
-  # We only wanna see the AC and MC curve
-  filter(name != "p") %&gt;% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") 
-```
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-80-1.png" width="65%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot the **average cost** and marginal cost curve more closely:
-
-
-
-``` r
-data %&gt;% pivot_longer(!q) %&gt;% 
-  # We only wanna see the AC and MC curve
-  filter(name != "p") %&gt;% 
-    # We only focus in Q values around AC shifts its slope
-  filter(q %in% seq(5,20)) %&gt;% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + coord_cartesian(ylim = c(8,12)) +
-  geom_vline(xintercept = 10, linetype = "dashed") + geom_hline(yintercept = 10, linetype = "dashed") 
-```
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-81-1.png" width="65%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's compute the revenue and marginal revenue:
-
-
-``` r
-data &lt;-  
-  data %&gt;% 
-  mutate(
-    # Revenue or profit
-    revenue = p * q,
-    # Marginal revenue Δ R / Δ Q
-    mr = (revenue - dplyr::lag(revenue))/(1)
-  ) 
-
-data
-## # A tibble: 120 × 6
-##        q    ac    mc     p revenue    mr
-##    &lt;int&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;
-##  1     1  50.5     1   119     119    NA
-##  2     2  26       2   118     236   117
-##  3     3  18.2     3   117     351   115
-##  4     4  14.5     4   116     464   113
-##  5     5  12.5     5   115     575   111
-##  6     6  11.3     6   114     684   109
-##  7     7  10.6     7   113     791   107
-##  8     8  10.2     8   112     896   105
-##  9     9  10.1     9   111     999   103
-## 10    10  10      10   110    1100   101
-## # ℹ 110 more rows
-```
-
----
-
-Let's plot everything together (but the total revenue)
-
-
-``` r
-data %&gt;% select(-revenue) %&gt;% pivot_longer(!q) %&gt;% 
-  # We use ggplot canvas
-  ggplot(aes(q, value, color = name)) + geom_line() + geom_point(size = .1) + labs(x = "Q", y = "P", color = "Curve") + coord_cartesian(ylim = c(0,120))
-```
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-83-1.png" width="65%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot everything together (but the total revenue)
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-84-1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot everything together (but the total revenue)
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-85-1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot everything together (but the total revenue)
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-86-1.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
-
-Let's plot everything together (but the total revenue)
-
-&lt;img src="core-unit7_files/figure-html/unnamed-chunk-87-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
