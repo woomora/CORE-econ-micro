@@ -40,6 +40,7 @@ options(htmltools.dir.version = FALSE)
 options(htmltools.dir.version = FALSE)
 library(knitr)
 library(tidyverse)
+library(fixest)
 library(xaringanExtra)
 # set default options
 opts_chunk$set(echo=FALSE,
@@ -55,6 +56,14 @@ xaringanExtra::use_clipboard()
 xaringanExtra::use_webcam()
 xaringanExtra::use_broadcast()
 xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+# uncomment the following lines if you want to use the NHS-R theme colours by default
+# scale_fill_continuous <- partial(scale_fill_nhs, discrete = FALSE)
+# scale_fill_discrete <- partial(scale_fill_nhs, discrete = TRUE)
+# scale_colour_continuous <- partial(scale_colour_nhs, discrete = FALSE)
+# scale_colour_discrete <- partial(scale_colour_nhs, discrete = TRUE)
 ```
 
 .center2[
@@ -649,7 +658,7 @@ How much demand falls when price rises depends on the slope of the demand curve.
 --
 
 $$
-\varepsilon = - \frac{\text{% change in Q}}{\text{% change in P}}
+\varepsilon = - \frac{\% \text{ change in Q}}{\% \text{ change in P}}
 $$
 
 ---
@@ -663,7 +672,7 @@ Price changes by $\Delta P$, change demand by $\Delta Q$.
 
 
 $$
-\varepsilon = - \frac{\text{% change in Q}}{\text{% change in P}} \iff \varepsilon = - \frac{100 \Delta Q}{Q} / \frac{100 \Delta P}{P}
+\varepsilon = - \frac{\% \text{ change in Q}}{\% \text{ change in P}} \iff \varepsilon = - \frac{100 \Delta Q}{Q} / \frac{100 \Delta P}{P}
 $$
 
 --
