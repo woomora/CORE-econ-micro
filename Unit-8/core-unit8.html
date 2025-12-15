@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>CORE Econ Micro</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Guillermo Woo-Mora" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <script src="libs/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# CORE Econ Micro
+]
+.subtitle[
+## <div class="line-block">Supply and demand: Markets with many buyers and sellers</div>
+]
+.author[
+### Guillermo Woo-Mora
+]
+.date[
+### <div class="line-block">Paris Sciences et Lettres<br />
+Autumn 2025</div>
+]
+
+---
+
+
+&lt;style&gt;
+
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+
+.center2[
+# Intro
+]
+
+---
+
+.center[
+&lt;img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/01/avocado-toast-480x270.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.center[
+### Mexico: Avocado production
+]
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-6-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Mexico: Avocado production value
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-7-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+### Mexico: Homicide rate
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-8-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+### Mexico: War on Drugs
+
+&lt;img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/GUQFCOISXRAD5OR2ZFNCAIXIPY.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="https://sfractus-images.cleo.media/unsafe/0x0:1600x900/1600x0/biz_dev/1636133728806_widget_netflix_narcos_mexico_png.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+### Narcos (or DTO) shift to avocado
+
+&lt;img src="imgs/deharo_avocados.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+### (Boycotting doesn't seem to solve it)
+
+&lt;img src="imgs/grillo_avocado.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+.pull-left[
+
+### The Context for This Unit
+
+- Firms with **market power** can set their own price.
+- Market outcomes are generally **not Pareto-efficient**.
+- In reality, many firms are price-takers:
+  1. How does their behaviour differ from price-setting firms?
+  2. Can competition improve market outcomes?
+
+]
+
+--
+
+.pull-right[
+### This Unit
+
+- Model of interactions between price-taking firms and customers
+- **Perfect competition** = special case of the model
+- Similarities and differences between price-taking and price-setting firms
+
+]
+
+---
+
+.center2[
+# Buying and selling: Demand, supply, and the market-clearing price
+]
+
+---
+## Demand curve
+
+&lt;img src="imgs/f8-1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+**Demand curve** = total quantity that all consumers together want to buy at any given price.
+
+Represents the **willingness to pay (WTP)** of buyers.
+
+
+---
+## Supply curve
+
+**Supply curve** = total quantity that all firms together would produce at any given price.
+
+&lt;img src="imgs/f8-2a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The first seller has a *reservation price* (lowest price at which someone is willing to sell a good) of 2, and will sell at any price above that.
+
+---
+## Supply curve
+
+**Supply curve** = total quantity that all firms together would produce at any given price.
+
+&lt;img src="imgs/f8-2b.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The 20th seller will accept 7
+
+---
+## Supply curve
+
+**Supply curve** = total quantity that all firms together would produce at any given price.
+
+&lt;img src="imgs/f8-2c.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The 40th seller’s reservation price is 12
+
+---
+## Supply curve
+
+
+**Supply curve** = total quantity that all firms together would produce at any given price.
+
+&lt;img src="imgs/f8-2d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+If you choose a particular price, the graph shows how many books would be supplied (Q) at that price.
+The supply curve slopes upward: the higher the price, the more students will be **willing to sell**.
+
+---
+.center2[
+# Competitive equilibrium and price-taking
+]
+
+---
+## Equilibrium
+
+At the **equilibrium (market-clearing) price**, supply equals demand.
+
+&lt;img src="imgs/f8-3a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+## Equilibrium
+
+At the **equilibrium (market-clearing) price**, supply equals demand.
+
+&lt;img src="imgs/f8-3b.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At a price P* = 8, the quantity supplied is equal to the quantity demanded: Q* = 24. The market is in equilibrium. We say that the market clears at a price of 8.
+
+---
+## Equilibrium
+
+At the **equilibrium (market-clearing) price**, supply equals demand.
+
+&lt;img src="imgs/f8-3c.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At a price greater than 8 more students would wish to sell, but not all of them would find buyers. There would be excess supply, so these sellers would want to lower their price.
+
+---
+## Equilibrium
+
+At the **equilibrium (market-clearing) price**, supply equals demand.
+
+&lt;img src="imgs/f8-3d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At a price less than 8, there would be more buyers than sellers—excess demand—so sellers could raise their prices. Only at 8 is there no tendency for change.
+
+---
+## Equilibrium
+
+At the **equilibrium (market-clearing) price**, supply equals demand.
+
+&lt;img src="imgs/f8-3d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Any other price is **not a Nash equilibrium**.
+
+
+---
+## Equilibrium
+
+At the **equilibrium (market-clearing) price**, supply equals demand.
+
+&lt;img src="imgs/f8-3b.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Assumes the products are identical, so buyers would be willing to buy from any seller.
+
+---
+.center2[
+# Firms in competitive equilibrium
+]
+
+---
+## Firms in competitive equilibrium
+
+Now we will analyse markets in which firms sell identical goods.
+
+If products are identical and consumers can easily switch from one firm to another, the choice of price is extremely restricted: firms will be **price-takers** in equilibrium.
+
+--
+
+- Imagine a city where many small **boulangeries** produce bread and sell it directly to consumers.
+
+- All boulangeries produce identical baguettes.
+
+- You run a small boulangerie specializing in baguettes and must choose a price and daily production quantity.
+
+- Nearby boulangeries sell identical baguettes for **EUR 2.35**, which constrains your pricing decision.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-7.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+The market demand curve for bread
+
+---
+## Firms in competitive equilibrium
+
+- Your production decision depends mainly on marginal cost, not fixed costs (like premises or equipment), since fixed costs don’t change with output.
+
+- The key costs for deciding how many loaves to bake are the extra costs per loaf, such as ingredients and labor time.
+	
+- Once equipment is installed, the marginal cost per additional loaf is low, as long as production stays within equipment capacity.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8a.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+Whatever quantity of loaves you decide to produce between 0 and 120, the cost of making one more loaf—that is, the marginal cost—is EUR 1.50.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8b.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+To produce more than 120 loaves, you have to operate beyond normal working hours, at a marginal cost of EUR 2.60, up to a maximum capacity of 180 loaves. Your marginal cost function steps up at 120.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8c.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+The market price is P = EUR 2.35. If you choose a higher price, customers will go to other boulangeries. 
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8c.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+Your feasible set of prices and quantities is the shaded area below the horizontal line at P, where the price is less than or equal to EUR 2.35, and the quantity is less than or equal to 180.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8c.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+Note: However many loaves you produce, you should sell them at EUR 2.35 each. A higher price is not feasible, and a lower price would bring less profit.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8d.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+On every loaf you produce up to 120, you can make a surplus of 2.35 − EUR 1.50 = EUR 0.85. Each additional loaf increases your profit.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8d.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+Above 120, you will make a loss of 2.60 − 2.35 = EUR 0.25 on each additional loaf. So your profit-maximizing quantity is Q* = 120.
+
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8e.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+Your surplus is the shaded area between the line P = EUR 2.35 and the marginal cost. Surplus = (2.35 − 1.50) × 120 = EUR 102.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8e.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+A firm in a competitive market equilibrium does not choose a price. 
+
+It accepts the market price, and chooses a quantity that depends on its marginal cost.
+
+---
+## Firms in competitive equilibrium
+
+&lt;img src="imgs/figure8-8e.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+So the marginal cost function is the firm’s supply curve⁠: number of loaves to produce for each level of the market price.
+
+---
+## The market supply curve
+
+The market for bread in the city has many consumers and many boulangeries. 
+
+Each boulangerie has a supply curve shaped similarly as the one we just analyzed.
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9a.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+To draw market supply, we plot all the quantities that can be produced by the boulangeries in order of their marginal costs—lowest first.
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9b.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+One boulangerie can make 360 loaves per day at a marginal cost of EUR 1 (MC = 1).
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9c.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+Three boulangeries can each produce 80 loaves per day at MC = 1.10. So a total of 240 loaves can be produced at MC = 1.10.
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9d.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+Higher steps show the amounts that can be produced at higher marginal cost by boulangeries switching production from other types of bread, or introducing overtime shifts.
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9d.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+If all produce at maximum capacity, they can produce 4,000 loaves.
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9e.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+If the price is `\(P\)`, only the boulangeries with `\(MC \leq P\)` will produce bread. 
+
+---
+## The market supply curve
+
+&lt;img src="imgs/figure8-9e.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+If the price was EUR 3, the total market supply would be 3,000 loaves.
+
+---
+## The market supply curve
+
+What happens if we add up more boulangeries?
+
+&lt;img src="imgs/figure8-10.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+---
+## Competitive equilibrium in the bread market
+
+&lt;img src="imgs/figure8-11.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+`$$P^* = 2 \quad Q^* = 5,000$$`
+
+---
+In a competitive equilibrium, the bakery is a price-taker. If the market price is `\(P\)`, how many loaves of bread should the bakery supply?
+
+--
+
+`$$\Pi_{PT}(Q) = PQ - C(Q)$$`
+what does the firm controls?
+
+--
+
+To maximize benefits:
+
+`$$\frac{d\Pi_{PT}}{dQ} = P - C'(Q) = 0$$`
+--
+
+`$$\iff P = C'(Q)  \quad \iff P = MC$$`
+--
+
+Compare this result to when firms are price-setters, where `\(P=f(Q)\)`:
+
+`$$\Pi_{PS}(Q) = f(Q)Q - C(Q)$$`
+
+--
+
+To maximize benefits:
+
+`$$\frac{d\Pi_{PS}}{dQ} = f(Q) + f'(Q)Q - C'(Q) = 0$$`
+--
+
+`$$\iff f(Q) + f'(Q)Q = C'(Q) \quad \iff MR = MC$$`
+
+---
+.center2[
+# Gains from trade in competitive equilibrium: Allocation and distribution
+]
+
+---
+## Gains from trade in competitive equilibrium
+
+Buyers and sellers of bread voluntarily engage in trade because both benefit.
+
+- boulangeries differ in their marginal costs of producing bread `\(\rightarrow\)` the supply curve tells us the marginal cost of each loaf produced
+
+- the demand curve shows the consumers’ willingness to pay
+
+---
+## Gains from trade in competitive equilibrium
+
+&lt;img src="imgs/figure8-12a.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+At the equilibrium price of EUR 2 in the bread market, a consumer who is willing to pay EUR 3.25 obtains a surplus of EUR 1.25.
+
+---
+## Gains from trade in competitive equilibrium
+
+&lt;img src="imgs/figure8-12b.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The shaded area above EUR 2 shows total consumer surplus—the sum of all the buyers’ gains from trade.
+
+---
+## Gains from trade in competitive equilibrium
+
+&lt;img src="imgs/figure8-12c.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The producer’s surplus on a unit of output is the difference between the price at which it is sold, and the marginal cost of producing it. 
+
+The marginal cost of the 1,000th loaf is EUR 1.11; since it is sold for EUR 2, the producer obtains a surplus of EUR 0.89.
+
+---
+## Gains from trade in competitive equilibrium
+
+&lt;img src="imgs/figure8-12d.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+The shaded area below EUR 2 is the sum of the bakeries’ surpluses on every loaf produced.
+
+---
+## Gains from trade in competitive equilibrium
+
+&lt;img src="imgs/figure8-12e.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+Adding together the consumer and producer surplus, we get the total surplus on all 5,000 loaves sold.
+
+---
+## Gains from trade in competitive equilibrium vs with market power
+
+.pull-left[
+&lt;img src="imgs/figure8-12e.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="imgs/figure7-20.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.center[
+**Competitive equilibrium is Pareto efficiency as long as**:
+]
+
+
+- there are **many buyers** and **sellers** of **identical goods**;
+- the market is at the equilibrium, when **all participants are price-takers**;
+- when trade in the market has **no external effects**;
+- there is **a complete contract** between each buyer and seller;
+- there is **complete information** about prices
+
+---
+.center2[
+# Changes in supply and demand
+]
+
+---
+## Changes in supply and demand
+
+Shifts in demand (or supply) are often referred to as **exogenous shocks**⁠ in economic analysis. 
+
+--
+
+- Economists call shifts in demand or supply exogenous shocks because they originate outside the model.
+
+- We first specify a model and determine its initial equilibrium.
+
+- A shock changes a determinant of demand or supply, and the model analyzes the resulting change in equilibrium, not the shock’s underlying cause.
+
+--
+
+*Think about the avocado example in the Intro.*
+
+---
+## An increase in demand
+
+Imagine a market in which hat sellers make and sell hats to consumers
+
+--
+
+&lt;img src="imgs/figure8-14a.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+At point A, the market is in competitive equilibrium. 24,000 hats are sold at a price of 8 each.
+
+---
+## An increase in demand
+
+Imagine a market in which hat sellers make and sell hats to consumers
+
+&lt;img src="imgs/figure8-14a.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+The supply curve is the marginal cost curve, so the marginal cost of producing a hat at point A is 8.
+
+---
+## An increase in demand
+
+Imagine a market in which hat sellers make and sell hats to consumers
+
+&lt;img src="imgs/figure8-14b.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+Hat-wearing becomes more fashionable. More people want to buy hats at each possible price. The demand curve shifts to the right.
+
+---
+## An increase in demand
+
+Imagine a market in which hat sellers make and sell hats to consumers
+
+&lt;img src="imgs/figure8-14c.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+If the price remained at 8, there would be excess demand for hats—that is, demand would exceed supply (point D).
+
+---
+## An increase in demand
+
+Imagine a market in which hat sellers make and sell hats to consumers
+
+&lt;img src="imgs/figure8-14d.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+With excess demand, hat sellers who observe more customers realise that they could make higher profits both by raising the price and by producing more hats.
+
+---
+## An increase in demand
+
+Imagine a market in which hat sellers make and sell hats to consumers
+
+&lt;img src="imgs/figure8-14d.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+They adjust prices and quantities until a new equilibrium emerges at point C.
+
+---
+## An increase in supply due to improved productivity
+
+Think again about the case of the bread market. 
+
+&lt;img src="imgs/figure8-15a.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+The city’s bakeries start out at point A, producing 5,000 loaves and selling them for 2 each.
+
+---
+## An increase in supply due to improved productivity
+
+Suppose that bakeries discover a new technique that allows workers to make bread more quickly. 
+
+--
+
+&lt;img src="imgs/figure8-15b.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+The supply curve corresponds to the bakeries’ marginal costs. When marginal costs fall, the supply curve shifts down.
+
+---
+## An increase in supply due to improved productivity
+
+Suppose that bakeries discover a new technique that allows workers to make bread more quickly. 
+
+&lt;img src="imgs/figure8-15c.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+Because costs have fallen, bakeries are willing to supply more at every price. In other words, the supply curve shifts to the right.
+
+---
+## An increase in supply due to improved productivity
+
+Suppose that bakeries discover a new technique that allows workers to make bread more quickly. 
+
+&lt;img src="imgs/figure8-15d.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+At the original price, there is more bread than buyers want (excess supply). The bakeries could benefit from lowering their prices and selling more bread.
+
+---
+## An increase in supply due to improved productivity
+
+Suppose that bakeries discover a new technique that allows workers to make bread more quickly. 
+
+&lt;img src="imgs/figure8-15e.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+The new market equilibrium is at point B, where more bread is sold and the price is lower. 
+
+---
+## An increase in supply due to improved productivity
+
+Suppose that bakeries discover a new technique that allows workers to make bread more quickly. 
+
+&lt;img src="imgs/figure8-15e.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+The demand curve has not shifted, but the fall in price has led to an increase in the quantity of bread demanded, along the demand curve.
+
+
+---
+.center2[
+# Short-run and long-run equilibria
+]
+
+---
+## Short-run and long-run equilibria
+
+**short run**: not a fixed amount of time, but the period during which certain factors—such as prices, wages, capital, technology, or institutions—are treated as constant or exogenous.
+
+--
+
+We have analyzed how a firm chooses its supply given the market price and its existing production capacity.
+
+We have also let aside the fixed and average costs of the firm.
+
+What happens when we consider them? What would we expect to happen in the long run⁠? 
+
+--
+
+**lung run**: not a fixed period of time, but the stage in which previously fixed variables—such as prices, wages, capital, or technology—are allowed to change and be determined within the model. In the long run, these factors become endogenous rather than constant.
+
+---
+## Short-run and long-run equilibria
+
+A boulangerie produces 120 baguettes per day at a marginal cost of EUR 1.50, while the market price is EUR 2, giving a surplus of EUR 0.50 per loaf.
+
+&lt;img src="imgs/figure8-16.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+Your average cost for 120 loaves is EUR 1.75, so you are earning a positive economic profit of EUR 0.25 per loaf. 
+
+
+---
+## Short-run and long-run equilibria
+
+Assume one could install enough equipment to make 80 additional loaves.
+
+&lt;img src="imgs/figure8-16.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+If the price remains at EUR 2, you will then produce 200 loaves at a lower average cost of EUR 1.71 per loaf: your profit will increase.
+
+
+---
+## Short-run and long-run equilibria
+
+If you are the only boulangerie owner who decides to expand, your increased production is unlikely to affect the market price.
+
+But what happens if other boulangeries that follow?
+
+--
+
+&lt;img src="imgs/figure8-17.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+---
+## Short-run and long-run equilibria
+
+
+- Competition and rent-seeking drive out inefficient firms and eliminate rents.
+
+- Surviving firms produce at low average cost, with the market price settling near that level.
+-  As a result, firms earn only normal profits, and the market stays in this equilibrium unless hit by an external demand or supply shock.
+
+&lt;img src="imgs/figure8-17.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+.center2[
+# How competition works
+]
+
+---
+## Price-setters vs. Price-takers
+
+.center[
+Two different models of how firms behave:
+]
+
+| Price-setter (Monopoly) | Price-takers (Perfect competition) |
+| ----------- | ----------- |
+| None or few substitutes      | Almost homogeneous good |
+| `\(MC &lt; P\)`   |  `\(MC = P\)`  |
+| Deadweight losses (Pareto inefficient) | No deadweight losses (can be Pareto efficient) |
+| Owners receive economic rents in both long- and short-run | No economic rents in the long-run |
+| Firms advertise their unique product | Little advertising expenditure |
+| Firms invest in R&amp;D, seek to prevent copying | Little incentive for innovation |
+
+---
+## How competition works
+
+Supose Two firms (A and B) sell an identical product that costs EUR 1 to produce.
+
+--
+
+- If both charge a **high price (EUR 4)**, total sales are **60 units**, split equally → each sells **30 units**.
+
+- If both charge a **low price (EUR 2)**, total sales are **72 units**, split equally → each sells **36 units**.
+
+--
+
+- Profit per unit: **EUR 3** at the high price, **EUR 1** at the low price.
+
+- Firm profits:
+  - **EUR 3 × 30 = EUR 90** if both choose the high price.
+  - **EUR 1 × 36 = EUR 36** if both choose the low price.
+  
+---
+## How competition works
+
+&lt;img src="imgs/figure8-20.png" width="47.5%" style="display: block; margin: auto;" /&gt;
+
+How to sustain the high profit NE?
+
+---
+## How competition works
+
+What changes if a third firm, C, can enter the market?
+
+--
+
+&lt;img src="imgs/figure8-21.png" width="47.5%" style="display: block; margin: auto;" /&gt;
+
+
+---
+.center2[
+# The effect of a tax
+]
+
+---
+## Taxes
+
+Governments can use taxation to raise revenue (to finance government spending, or redistribute resources) or to affect the allocation of goods and services in other ways.
+
+--
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Barri%C3%A8re_d%27Enfer%2C_place_Denfert-Rochereau%2C_Paris_05.jpg/2880px-Barri%C3%A8re_d%27Enfer%2C_place_Denfert-Rochereau%2C_Paris_05.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.center[
+*Barrière d’Enfer* in Paris
+]
+
+---
+## Taxes
+
+Governments can use taxation to raise revenue (to finance government spending, or redistribute resources) or to affect the allocation of goods and services in other ways.
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Paris_PC_1859_jms.jpg" width="45%" style="display: block; margin: auto;" /&gt;
+
+.center[
+*Mur des Fermiers généraux*
+]
+
+---
+## Taxes
+
+.center[
+&lt;iframe src="https://ourworldindata.org/grapher/tax-revenue-national-income-longrun?tab=line" loading="lazy" style="width: 80%; height: 545px; border: 0px none;" allow="web-share; clipboard-write"&gt;&lt;/iframe&gt;
+]
+
+---
+## Taxes
+.center[
+&lt;iframe src="https://ourworldindata.org/grapher/tax-revenues-vs-gdp-per-capita?tab=chart" loading="lazy" style="width: 80%; height: 545px; border: 0px none;" allow="web-share; clipboard-write"&gt;&lt;/iframe&gt;
+]
+
+---
+## Using taxes to raise revenue: The case of salt
+
+&lt;img src="imgs/f8-14a.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+Initially the market equilibrium is at point A. The price is `\(P^*\)` and the quantity of salt sold is `\(Q^*\)`.
+
+---
+## Using taxes to raise revenue: The case of salt
+
+&lt;img src="imgs/f8-14b.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+A 30% tax is imposed on suppliers. Their marginal costs are effectively 30% higher at each quantity. The supply curve shifts.
+
+---
+## Using taxes to raise revenue: The case of salt
+
+&lt;img src="imgs/f8-14c.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+The new equilibrium is at B. The price paid by consumers has risen to `\(P_1\)` and the quantity has fallen to `\(Q_1\)`.
+
+---
+## Using taxes to raise revenue: The case of salt
+
+&lt;img src="imgs/f8-14d.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+The price received by suppliers (after they have paid the tax) is `\(P_0\)`. The double-headed arrow shows the tax paid to the government on each unit of salt sold.
+
+---
+## Using taxes to raise revenue: The case of salt
+
+&lt;img src="imgs/f8-14d.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+Taxes on suppliers/consumers shift the supply/demand curve because the price is higher at each quantity.
+
+---
+## Taxes: Welfare effects
+
+&lt;img src="imgs/f8-15a.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+Before the tax is imposed, the equilibrium allocation at A maximizes the gains from trade. In the upper panel the red triangle is the consumer surplus and the blue triangle is the producer surplus.
+
+---
+## Taxes: Welfare effects
+
+&lt;img src="imgs/f8-15b.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+The tax reduces the quantity traded to `\(Q_1\)`, and raises the consumer price from `\(P^*\)` to `\(P_1\)`. The consumer surplus falls.
+
+---
+## Taxes: Welfare effects
+
+&lt;img src="imgs/f8-15c.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+The suppliers sell a lower quantity, and the price they receive falls from `\(P^*\)` to `\(P_0\)`. The producer surplus falls.
+
+---
+## Taxes: Welfare effects
+
+&lt;img src="imgs/f8-15d.png" width="55%" style="display: block; margin: auto;" /&gt;
+
+A tax equal to `\((P_1 – P_0)\)` is paid on each of the `\(Q_1\)` units of salt that are sold. The green rectangular area is the total tax revenue. There is a deadweight loss equal to the area of the white triangle.
+
+---
+## Taxes: Welfare effects
+
+.pull-left[
+
+- **Tax incidence**, the effect of a tax on the welfare of buyers and sellers, depends on relative elasticity of consumers and producers. 
+
+  - The less elastic group bears more of the tax burden. 
+  
+  - Taxing depending on the context
+
+- Taxes can still raise welfare if governments use tax revenue to provide beneficial goods/services. 
+
+]
+
+.pull-right[
+&lt;img src="https://qph.cf2.quoracdn.net/main-qimg-297ccc3580c7868a90d23511afe506b8" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+
+
+---
+#### Example: Football markets
+
+&lt;img src="imgs/FootballTaxes_-Kleven_etal2013.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+- Between 1985-1995 there was no correlation between migration and tax rates
+- In the period 1996-2008, after the Bosman ruling on free mobility was enacted, the correlation became strongly negative
+ - countries with higher top earnings tax rates became less likely to have foreign players
+- The mobility of players had a negative impact on the performance of football clubs of countries with high tax rates
+- *‘Superstars’* are very responsive to taxation, contrasts with the available evidence for typical individuals
+
+---
+### Taxes and politics
+
+&lt;img src="https://static.lpnt.fr/images/2018/12/05/17706501lpw-17706503-article-gilets-jaunes-taxes-jpg_5784649_1250x625.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+.center[
+[*Gilet Jaune* and carbon taxes](https://open.spotify.com/episode/2o5ihePEXKxyfFtvr54JUn?si=8f4228a1c5104ab0)
+]
+
+---
+.center2[
+# Price controls
+]
+
+---
+## Price controls
+
+&lt;img src="imgs/mamdani-price-controls.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+[Mamdani Has a Point About Rent Control](https://www.theatlantic.com/economy/archive/2025/11/mamdani-housing-rent-control/684790/)
+
+---
+## Price controls
+
+Let's consider a local government might decide to control the housing rent in a city.
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25a.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+Initially, the market clears with 8,000 tenancies at rent of EUR 500.
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25b.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+Now suppose that there is an increase in demand for tenancies.
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25c.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+The supply of housing for rent is inelastic, at least in the short run. The new market-clearing rent, EUR 830, is much higher.
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25d.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+Suppose the city authorities impose a rent ceiling at EUR 500. Landlords will continue to supply 8,000 tenancies, so there is excess demand.
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25d.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+When the price is below the market-clearing level, supply is less than demand. We say that the suppliers are on the short side of the market. They determine the number of tenancies.
+
+---
+## Price controls
+
+
+&lt;img src="imgs/figure8-25e.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+When the price is EUR 500, there are 12,000 people on the long side of the market. Only 8,000 obtain tenancies. 
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25e.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+There are 8,000 people willing to pay EUR 1,100 or more, but tenancies are not necessarily allocated to the people with highest willingness to pay.
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25f.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+**Opportunities for rent-seeking**: if it were legal, some tenants could sublet their accommodation at EUR 1,100, obtaining an economic rent of EUR 600
+
+
+---
+## Price controls
+
+&lt;img src="imgs/figure8-25g.png" width="52.5%" style="display: block; margin: auto;" /&gt;
+
+In the long run, the city authorities could make more tenancies available at a reasonable rent by encouraging housebuilding, to shift out the supply curve.
+
+
+---
+.center2[
+# Supply, demand, and competitive equilibrium: Is this a good model?
+]
+
+---
+## Supply, demand, and competitive equilibrium: Is this a good model?
+
+.pull-left[
+
+**Perfectly competitive market**
+
+A hypothetical market in which:
+
+1. The good or service being exchanged is homogeneous
+2. Very large number of potential buyers and sellers
+3. Buyers and sellers all act independently of one another
+4. Price information easily available to buyers and sellers
+
+]
+
+--
+
+.pull-right[
+
+Some characteristics:
+
+- **Law of One Price**: All transactions take place at a **single price**.
+- At that price, **the market clears (supply = demand)**.
+- Buyers and sellers are all **price-takers**.
+- All potential **gains from trade** are realized.
+
+]
+
+
+--
+
+.center[
+### Is there perfect competition?
+
+Perfect competition may not hold completely in reality, 
+but can be a good approximation to actual firm behaviour.
+]
+
+--
+
+See how people behaved in a perfectly competitive setting:
+
+---
+
+See how people behaved in a perfectly competitive setting:
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-93-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+See how people behaved in a perfectly competitive setting:
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-94-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+Which would be the price in competitive equilibrium?
+
+---
+
+See how people behaved in a perfectly competitive setting:
+
+&lt;img src="core-unit8_files/figure-html/unnamed-chunk-95-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+Around 7 transactions are near the predicted price in competitive equilibrium.
+
+
+---
+## Perfectly competitive markets: Caveats
+
+.pull-left[
+
+- Allocation may not be Pareto efficient **if assumptions do not hold**: We might not have taken everything into account
+
+- **Fairness**: The distribution of total surplus depends on the **elasticities of demand and supply** (share of total surplus inversely related to elasticity)
+
+- Hard to find price-takers in real life
+  - Even when consumers can easily check the price of products (online shopping sites), prices of the same product differ
+  
+  - [Fulton Fish Market](https://www.youtube.com/watch?v=5hJF8zNJg5I)
+
+]
+
+
+.pull-right[
+
+### Beware of *Market fundamentalist* ! (Basu, 2010)
+
+&lt;img src="imgs/economix.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+---
+.center2[
+# Summary
+]
+
+---
+## Summary
+
+1) Model of price-taking firms
+
+- Competitive equilibrium where demand = supply
+- Firms maximize profits where `\(MC = Price\)`
+- Perfect competition is a special case
+- Comparison with price-setting firms
+
+--
+
+2) Used model to show how equilibrium can change
+
+- Exogenous shocks to demand/supply or market entry
+- Effect of taxation and price controls on surplus
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
