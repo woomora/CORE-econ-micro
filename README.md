@@ -28,5 +28,9 @@ Hi! Welcome to the CORE Economics - Micro course's website :wave:
 
   - [Unit 7: The firm and its customers](https://woomora.github.io/CORE-econ-micro/Unit-7/core-unit7.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-7/core-unit7.pdf)]
 
+  - [Unit 8: Supply and demand: Markets with many buyers and sellers](https://woomora.github.io/CORE-econ-micro/Unit-8/core-unit8.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-8/core-unit8.pdf)]
+
+  - [Unit 10: Market successes and failures: The societal effects of private decisions](https://woomora.github.io/CORE-econ-micro/Unit-10/core-unit10.html) [[pdf](https://woomora.github.io/CORE-econ-micro/Unit-10/core-unit10.pdf)]
+
 
 You can reach me at guillermo.woo-mora [at] psemail.eu.
